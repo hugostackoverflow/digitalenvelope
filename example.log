@@ -1,0 +1,94 @@
+
+INFO:root:Sun Feb  2 17:26:09 2020### send.py started ###sender receiver ca-chain.cert.pem msg.txt 
+INFO:root:Sun Feb  2 17:26:09 2020: simetric key generated
+INFO:root:Sun Feb  2 17:26:09 2020: sig key generated
+INFO:root:Sun Feb  2 17:26:09 2020: verify if receiver crt is valid
+INFO:root:Sun Feb  2 17:26:09 2020: receiver crt is valid
+INFO:root:Sun Feb  2 17:26:09 2020: key and iv ciphered with public key from receiver
+INFO:root:Sun Feb  2 17:26:09 2020: cipher message with simetric key
+INFO:root:Sun Feb  2 17:26:09 2020: save cipheredKey and signature to file message.txt
+INFO:root:Sun Feb  2 17:26:09 2020: save ciphered msg to file secretMessage.txt
+INFO:root:Sun Feb  2 17:26:29 2020: simetric key generated
+INFO:root:Sun Feb  2 17:26:29 2020: sig key generated
+INFO:root:Sun Feb  2 17:26:29 2020: verify if receiver crt is valid
+INFO:root:Sun Feb  2 17:26:29 2020: receiver crt is valid
+INFO:root:Sun Feb  2 17:26:29 2020: key and iv ciphered with public key from receiver
+INFO:root:Sun Feb  2 17:26:29 2020: cipher message with simetric key
+INFO:root:Sun Feb  2 17:26:29 2020: save cipheredKey and signature to file message.txt
+INFO:root:Sun Feb  2 17:26:29 2020: save ciphered msg to file secretMessage.txt
+INFO:root: 
+INFO:root:Sun Feb  2 17:27:23 2020 ### send.py started ###sender receiver ca-chain.cert.pem msg.txt 
+INFO:root:Sun Feb  2 17:27:23 2020: simetric key generated
+INFO:root:Sun Feb  2 17:27:23 2020: sig key generated
+INFO:root:Sun Feb  2 17:27:23 2020: verify if receiver crt is valid
+INFO:root:Sun Feb  2 17:27:23 2020: receiver crt is valid
+INFO:root:Sun Feb  2 17:27:23 2020: key and iv ciphered with public key from receiver
+INFO:root:Sun Feb  2 17:27:23 2020: cipher message with simetric key
+INFO:root:Sun Feb  2 17:27:23 2020: save cipheredKey and signature to file message.txt
+INFO:root:Sun Feb  2 17:27:23 2020: save ciphered msg to file secretMessage.txt
+INFO:root: 
+INFO:root:Sun Feb  2 17:27:37 2020 ### send.py started ###sender receiver ca-chain.cert.pem msg.txt 
+INFO:root:Sun Feb  2 17:27:37 2020: simetric key generated
+INFO:root:Sun Feb  2 17:27:37 2020: sig key generated
+INFO:root:Sun Feb  2 17:27:37 2020: verify if receiver crt is valid
+INFO:root:Sun Feb  2 17:27:37 2020: receiver crt is valid
+INFO:root:Sun Feb  2 17:27:37 2020: key and iv ciphered with public key from receiver
+INFO:root:Sun Feb  2 17:27:37 2020: cipher message with simetric key
+INFO:root:Sun Feb  2 17:27:37 2020: save cipheredKey and signature to file message.txt
+INFO:root:Sun Feb  2 17:27:37 2020: save ciphered msg to file secretMessage.txt
+INFO:root: 
+INFO:root:Sun Feb  2 17:33:54 2020: load CA cert
+INFO:root:Sun Feb  2 17:33:54 2020: load receiver private key
+INFO:root:Sun Feb  2 17:33:54 2020: load Message.txt
+INFO:root:Sun Feb  2 17:33:54 2020: load sender cert
+INFO:root:Sun Feb  2 17:33:54 2020: try to validate cert from sender with CA cert
+INFO:root:Sun Feb  2 17:33:54 2020: valid cert from sender
+INFO:root:Sun Feb  2 17:33:54 2020: decrypt envelope with private key from receiver
+INFO:root:Sun Feb  2 17:33:54 2020: will try to validate signature
+INFO:root:Sun Feb  2 17:33:54 2020: signature validated
+INFO:root:Sun Feb  2 17:33:54 2020: message decifer Hello World
+INFO:root: 
+INFO:root:Sun Feb  2 18:05:56 2020: load CA cert
+INFO:root:Sun Feb  2 18:05:56 2020: load receiver private key
+INFO:root:Sun Feb  2 18:05:56 2020: load Message.txt
+INFO:root:Sun Feb  2 18:05:56 2020: load sender cert
+INFO:root:Sun Feb  2 18:05:56 2020: try to validate cert from sender with CA cert
+INFO:root:Sun Feb  2 18:05:56 2020: valid cert from sender
+INFO:root:Sun Feb  2 18:05:56 2020: decrypt envelope with private key from receiver
+INFO:root:Sun Feb  2 18:05:56 2020: will try to validate signature
+INFO:root:Sun Feb  2 18:05:56 2020: signature validated
+INFO:root:Sun Feb  2 18:05:56 2020: message decifer Hello World
+INFO:root: 
+INFO:root:Sun Feb  2 18:12:29 2020 ### receive.py started ###sender receiver ca-chain.cert.pem signature.sig Message.txt secretMessage.txt
+INFO:root:Sun Feb  2 18:12:29 2020: load CA cert
+INFO:root:Sun Feb  2 18:12:29 2020: load receiver private key
+INFO:root:Sun Feb  2 18:12:29 2020: load Message.txt
+INFO:root:Sun Feb  2 18:12:29 2020: load sender cert
+INFO:root:Sun Feb  2 18:12:29 2020: try to validate cert from sender with CA cert
+INFO:root:Sun Feb  2 18:12:29 2020: valid cert from sender
+INFO:root:Sun Feb  2 18:12:29 2020: decrypt envelope with private key from receiver
+INFO:root:Sun Feb  2 18:12:29 2020: will try to validate signature
+INFO:root:Sun Feb  2 18:12:29 2020: signature validated
+INFO:root:Sun Feb  2 18:12:29 2020: message decifer Hello World
+INFO:root: 
+INFO:root:Sun Feb  2 18:33:58 2020 ### send.py started ###sender receiver ca-chain.cert.pem msg.txt 
+INFO:root:Sun Feb  2 18:33:58 2020: simetric key generated
+INFO:root:Sun Feb  2 18:33:58 2020: sig key generated
+INFO:root:Sun Feb  2 18:33:58 2020: verify if receiver crt is valid
+INFO:root:Sun Feb  2 18:33:58 2020: receiver crt is valid
+INFO:root:Sun Feb  2 18:33:58 2020: key and iv ciphered with public key from receiver
+INFO:root:Sun Feb  2 18:33:58 2020: cipher message with simetric key
+INFO:root:Sun Feb  2 18:33:58 2020: save cipheredKey and signature to file message.txt
+INFO:root:Sun Feb  2 18:33:58 2020: save ciphered msg to file secretMessage.txt
+INFO:root: 
+INFO:root:Sun Feb  2 18:34:44 2020 ### receive.py started ###sender receiver ca-chain.cert.pem signature.sig Message.txt secretMessage.txt
+INFO:root:Sun Feb  2 18:34:44 2020: load CA cert
+INFO:root:Sun Feb  2 18:34:44 2020: load receiver private key
+INFO:root:Sun Feb  2 18:34:44 2020: load Message.txt
+INFO:root:Sun Feb  2 18:34:44 2020: load sender cert
+INFO:root:Sun Feb  2 18:34:44 2020: try to validate cert from sender with CA cert
+INFO:root:Sun Feb  2 18:34:44 2020: valid cert from sender
+INFO:root:Sun Feb  2 18:34:44 2020: decrypt envelope with private key from receiver
+INFO:root:Sun Feb  2 18:34:44 2020: will try to validate signature
+INFO:root:Sun Feb  2 18:34:44 2020: signature validated
+INFO:root:Sun Feb  2 18:34:44 2020: message decifer Hello World

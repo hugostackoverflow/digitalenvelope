@@ -1,0 +1,1 @@
+V	300129180202Z		1000	unknown	/C=PT/ST=Minho/O=Hugo Ltd/OU=Hugo Ltd Certificate Authority/CN=Hugo Ltd Intermediate Authority
