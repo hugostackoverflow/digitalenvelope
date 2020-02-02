@@ -58,7 +58,7 @@ openssl ca -config intermediate/openssl.cnf \
 Enter pwd: "Braga.2020"
 ```
 
-* Create crt file for sender
+* Create crt file for receiver
 ```bash
 openssl ca -config intermediate/openssl.cnf \ 
     -extensions server_cert -days 375 -notext -md sha256 \
