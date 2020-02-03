@@ -34,22 +34,27 @@ Send and Receive
 
 ## Usage
 * Create sender private and public key
+** argv[2] - name of the user, i.e sender
 ```bash
 python3 keyGenerator.py sender
 ```
 * Create receiver private and public key
+** argv[2] - name of the user, i.e receiver
 ```bash
 python3 keyGenerator.py receiver
 ```
 * Create csr file for sender
+** argv[2] - name of the user, i.e sender
 ```bash
 python3 csrGenerator.py sender
 ```
 * Create csr file for receiver
+** argv[2] - name of the user, i.e receiver
 ```bash
 python3 csrGenerator.py receiver
 ```
 * Create crt file for sender
+** argv[2] - name of the user, i.e sender
 ```bash
 openssl ca -config intermediate/openssl.cnf \ 
     -extensions server_cert -days 375 -notext -md sha256 \
@@ -59,6 +64,7 @@ Enter pwd: "Braga.2020"
 ```
 
 * Create crt file for receiver
+** argv[2] - name of the user, i.e sender
 ```bash
 openssl ca -config intermediate/openssl.cnf \ 
     -extensions server_cert -days 375 -notext -md sha256 \
@@ -68,6 +74,10 @@ Enter pwd: "Braga.2020"
 ```
 
 * Send Message
+** argv[2] - name of the user sending, i.e sender
+** argv[3] - name of the user receiving, i.e receiver
+** argv[4] - certificate of the root CA i.e ca-chain.cert.pem
+** argv[5] - message to be cypher in a txt format, i.e msg.txt
 ```bash
 python3 send.py sender receiver ca-chain.cert.pem msg.txt
 ```
@@ -85,6 +95,11 @@ INFO:root:Sun Feb  2 17:27:23 2020: save cipheredKey and signature to file messa
 INFO:root:Sun Feb  2 17:27:23 2020: save ciphered msg to file secretMessage.txt
 ```
 * Receive Message
+** argv[2] - name of the user receiving, i.e receiver
+** argv[3] - name of the user sending, i.e sender
+** argv[4] - certificate of the root CA i.e ca-chain.cert.pem
+** argv[5] - signature to be verify, i.e signature.sig
+** argv[6] - message to be decypher in a txt format, i.e secretMessage.txt
 ```bash
 python3 receive.py sender receiver ca-chain.cert.pem signature.sig Message.txt secretMessage.txt
 ```
