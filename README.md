@@ -54,7 +54,7 @@ python3 csrGenerator.py sender
 python3 csrGenerator.py receiver
 ```
 * Create crt file for sender
-** argv[2] - name of the user, i.e sender
+-- argv[2] - name of the user, i.e sender
 ```bash
 openssl ca -config intermediate/openssl.cnf \ 
     -extensions server_cert -days 375 -notext -md sha256 \
