@@ -1,4 +1,3 @@
-#CA done https://gist.github.com/Soarez/9688998
 
 from cryptography import x509
 from cryptography.hazmat.backends import default_backend
@@ -52,8 +51,8 @@ if len(sys.argv) == 2:
 # # cd /root/ca
 # openssl ca -config intermediate/openssl.cnf \ 
 #    -extensions server_cert -days 375 -notext -md sha256 \
-#    -in /Users/hugo/Trabalho Pratico Crypto/Crypto2020/TODO/Final/receiverCsr.pem \
-#    -out /Users/hugo/Trabalho Pratico Crypto/Crypto2020/TODO/Final/receiver.crt.pem
+#    -in /receiverCsr.pem \
+#    -out /receiver.crt.pem
 # chmod 444 intermediate/certs/www.example.com.cert.pem
 #
 #
